@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave": {
+    
+    },
+    "prettier.singleQuote": true,
+    "prettier.resolveGlobalModules": false
+}
