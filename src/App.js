@@ -1,11 +1,11 @@
 import './App.css';
 
-const Person=()=>{
+const Person=(props)=>{
     return(
         <>
-<h1>Name:Aynur</h1>
-<h2>Last name: balci</h2>
-<h2>Age:30</h2>
+<h1>Name:{props.name}</h1>
+<h2>Last name: {props.lastname}</h2>
+<h2>Age:{props.age}</h2>
 
 
         </>
@@ -17,9 +17,10 @@ const App = () => {
     const isNameShowing=true;
     return ( 
     <div className = "App" >
-        <h1>
-        hello</h1> {name ?(<>{name}</>):(<><h1>hiiii</h1>
-        <h2>gfcjcj</h2></>) } 
+        <Person name={'john'} lastname={'balci'}/>
+         <Person name="aguk"  age={2+2} />
+          <Person/>
+           <Person/>
         
 
         </div>
